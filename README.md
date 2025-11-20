@@ -62,4 +62,9 @@ In main:
 Pentru a completa acest challenge:
 
 Creaza un test care testeaza `getUsers` cu o clasa numita `MockUserClient` (care implementeaza `UserClientInterface`)
+
 Creaza un test care testeaza atunci cand utilizatorul selecteaza userul cu id-ul 2.
+
+## Resurse utile
+
+https://www.baeldung.com/parameterized-tests-junit-5
