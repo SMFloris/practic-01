@@ -24,13 +24,15 @@ class AppTest {
 
     private static Stream<Arguments> provideArgumentsForSum() {
         return Stream.of(
-          Arguments.of(5, 5, 10)
+          Arguments.of(5, 5, 10),
+          Arguments.of(6, 5, 11),
+          Arguments.of(6, 6, 12)
         );
     }
 
     @ParameterizedTest
     @MethodSource("provideArgumentsForSum")
-    void appAddsNumbersToTen(Integer a, Integer b, Integer sum) {
+    void appAddsNumbersMultiple(Integer a, Integer b, Integer sum) {
         App classUnderTest = new App();
         assertEquals(sum, classUnderTest.addNumbers(a, b), "Result of a+b should be equal to sum");
     }
