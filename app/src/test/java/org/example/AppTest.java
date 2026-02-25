@@ -26,8 +26,7 @@ class AppTest {
         return Stream.of(
           Arguments.of(5, 5, 10),
           Arguments.of(6, 5, 11),
-          Arguments.of(6, 6, 12),
-          Arguments.of(6, 6, 11)
+          Arguments.of(6, 6, 12)
         );
     }
 
